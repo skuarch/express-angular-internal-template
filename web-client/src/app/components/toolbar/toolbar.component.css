@@ -1,0 +1,60 @@
+
+.fill-remaining-space {
+   /* This fills the remaining space, by using flexbox. 
+      Every toolbar row uses a flexbox row layout. */
+   flex: 1 1 auto;
+}
+
+span.logo-wrapper {
+   height: 30px;
+   width: auto;
+   display: block;
+   position: relative;
+}
+span.logo-wrapper .logo {
+   height: 30px;
+}
+.main-toolbar {
+   background: #FFF;
+   box-shadow: 0 3px 3px -2px rgba(0,0,0,.1), 0 3px 4px 0 rgba(0,0,0,.07), 0 1px 8px 0 rgba(0,0,0,.06);
+   /* min-height: 70px; */
+}
+
+.user-profile {
+   font-size: 15px;
+   font-weight: 400;
+   color: rgba(40, 40, 40, .65);
+}
+/* span.user-profile:before {
+   content: "";
+   width: 1px;
+   height: 100%;
+   display: unset;
+   position: relative;
+   border-left: 1px solid rgba(40, 40, 40, .05);
+   margin: 0 4px 0;
+} */
+span.user-profile::before {
+   content: "";
+   position: relative;
+   width: 28px;
+   height: 28px;
+   display: inline-block;
+   margin: 0px 8px 0 0px;
+   background: rgba(40, 40, 40, .05);
+   border-radius: 24px;
+   vertical-align: middle;
+}
+.user-profile .mat-icon-button .mat-icon {
+   color: rgba(40, 40, 40, .2);
+   line-height: 20px;
+   height: 20px;
+   font-size: 20px;
+}
+
+.main-toolbar {
+   position: fixed;
+   top: 0;
+   z-index: 1000;
+   left: 0;
+}

@@ -1,0 +1,4 @@
+./srctest
+./src/test/**
+src/test/
+/src/test/**

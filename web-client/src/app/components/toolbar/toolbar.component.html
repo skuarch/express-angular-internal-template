@@ -1,0 +1,18 @@
+<mat-toolbar class="main-toolbar">
+  <mat-toolbar-row>
+    <span class="logo-wrapper">
+      <img class="logo" src="/img/logo.png"/>
+    </span>
+    <span class="fill-remaining-space"></span>
+      <span class="user-profile">
+        {{ profile.givenName }} {{ profile.familyName }}
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>expand_more</mat-icon>
+        </button>
+        <mat-menu #appMenu="matMenu">
+            <button mat-menu-item (click)="navigateProfile()">profile</button>
+          <button mat-menu-item (click)="logout()">logout</button>
+        </mat-menu>
+      </span>
+  </mat-toolbar-row>
+</mat-toolbar>

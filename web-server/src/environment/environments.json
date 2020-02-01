@@ -1,0 +1,92 @@
+{
+    "prod": {
+        "serverPort": 8080,
+        "name": "local",
+        "clientSecret": "als-poc-basic-ALS1$",
+        "clientId": "als-poc-basic",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ],
+        "redirectUri": "https://app.astrazeneca.net/login",
+        "urlProfile": "https://astrazeneca.com/idp/userinfo.openid",
+        "accessTokenUri": "https://astrazeneca.com/as/token.oauth2",
+        "authorizationUri": "https://astrazeneca.com/as/authorization.oauth2",
+        "sessionTime": 3600000,
+        "sessionSecure": false,
+        "sessionName": "session"
+      },
+    "preprod": {
+        "serverPort": 8080,
+        "name": "local",
+        "clientSecret": "als-poc-basic-ALS1$",
+        "clientId": "als-poc-basic",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ],
+        "redirectUri": "https://app.astrazeneca.net/login",
+        "urlProfile": "https://pingstage.astrazeneca.com/idp/userinfo.openid",
+        "accessTokenUri": "https://pingstage.astrazeneca.com/as/token.oauth2",
+        "authorizationUri": "https://pingstage.astrazeneca.com/as/authorization.oauth2",
+        "sessionTime": 3600000,
+        "sessionSecure": false,
+        "sessionName": "session"
+      },
+    "test": {
+        "serverPort": 8080,
+        "name": "local",
+        "clientSecret": "als-poc-basic-ALS1$",
+        "clientId": "als-poc-basic",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ],
+        "redirectUri": "https://app.astrazeneca.net/login",
+        "urlProfile": "https://pingstage.astrazeneca.com/idp/userinfo.openid",
+        "accessTokenUri": "https://pingstage.astrazeneca.com/as/token.oauth2",
+        "authorizationUri": "https://pingstage.astrazeneca.com/as/authorization.oauth2",
+        "sessionTime": 3600000,
+        "sessionSecure": false,
+        "sessionName": "session"
+      },
+    "dev": {
+        "serverPort": 8080,
+        "name": "local",
+        "clientSecret": "als-poc-basic-ALS1$",
+        "clientId": "als-poc-basic",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ],
+        "redirectUri": "https://angular-internal-dev.astrazeneca.net/login",
+        "urlProfile": "https://pingstage.astrazeneca.com/idp/userinfo.openid",
+        "accessTokenUri": "https://pingstage.astrazeneca.com/as/token.oauth2",
+        "authorizationUri": "https://pingstage.astrazeneca.com/as/authorization.oauth2",
+        "sessionTime": 3600000,
+        "sessionSecure": false,
+        "sessionName": "session"
+      },
+    "local": {
+        "serverPort": 8080,
+        "name": "local",
+        "clientSecret": "als-poc-basic-ALS1$",
+        "clientId": "als-poc-basic",
+        "scopes": [
+          "openid",
+          "profile",
+          "email"
+        ],
+        "redirectUri": "http://localhost:8080/login",
+        "urlProfile": "https://pingstage.astrazeneca.com/idp/userinfo.openid",
+        "accessTokenUri": "https://pingstage.astrazeneca.com/as/token.oauth2",
+        "authorizationUri": "https://pingstage.astrazeneca.com/as/authorization.oauth2",
+        "sessionTime": 3600000,
+        "sessionSecure": false,
+        "sessionName": "session"
+      }
+}

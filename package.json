@@ -1,0 +1,25 @@
+{
+  "name": "express-angular-template",
+  "version": "1.0.0",
+  "description": "template",
+  "scripts": {
+    "preinstall": "sh ./bash-scripts/preinstall.sh",
+    "start": "sh ./bash-scripts/start.sh",
+    "local": "export ENVIRONMENT=local && concurrently --raw \"npm run build-client\" \"npm run run-server-local\"",
+    "build-client": "sh ./bash-scripts/build-web-client.sh",
+    "run-server-local": "cd web-server && npm run run-local",
+    "setup": "sh ./bash-scripts/setup.sh",
+    "delete": "sh ./bash-scripts/delete.sh",
+    "test": "./bash-scripts/test.sh",
+    "sonar": "cd web-client/ && sonar-scanner && cd ../web-server/ && sonar-scanner",
+    "lint": "./bash-scripts/lint.sh",
+    "cover": "./bash-scripts/cover.sh"
+  },
+  "private": true,
+  "dependencies": {
+    "concurrently": "4.1.0"
+  },
+  "devDependencies": {
+    "husky": "1.3.1"
+  }
+}

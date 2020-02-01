@@ -1,0 +1,12 @@
+{
+    "esversion": 6,
+    "maxerr": 10,
+    "latedef":true,
+    "curly": true,
+    "nocomma":  true,
+    "nonbsp": true,
+    "nonew": true,
+    "shadow": true,
+    "singleGroups": true,
+    "maxstatements": 15
+}

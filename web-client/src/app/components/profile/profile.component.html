@@ -1,0 +1,19 @@
+<app-toolbar></app-toolbar>
+<br><br><br><br><br><br>
+<div *ngIf="profile">
+   prid: {{ profile.prid }}
+   <br>
+   email: {{ profile.email }} 
+   <br>
+   designation: {{ profile.designation }} 
+   <br>
+   user principal name: {{ profile.userPrincipalName }} 
+   <br>
+   family name: {{ profile.familyName }} 
+   <br>
+   given name: {{ profile.givenName }} 
+   
+</div>
+<div *ngIf="!profile">
+    looks like your profile is empty
+</div>

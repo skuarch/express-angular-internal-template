@@ -1,0 +1,30 @@
+Ooops something is wrong !!!
+<br /><br />
+<div *ngIf="appError.name">
+  error name: {{ appError.name }}<br />
+</div>
+<div *ngIf="appError.message">
+  error message: {{ appError.message }}<br />
+</div>
+<div *ngIf="appError.details">
+  error details: {{ appError.details }}<br />
+</div>
+<div *ngIf="appError.url">
+  error url: {{ appError.url }}<br />
+</div>
+<div *ngIf="appError.status">
+  error status: {{ appError.status }}<br />
+</div>
+<div *ngIf="appError.code">
+  error code: {{ appError.code }}<br />
+</div>
+<div *ngIf="appError.statusText">
+  error statusText: {{ appError.statusText }}<br />
+</div>
+<br />
+<div *ngIf="appError.popUpCloseable">
+  <button (click)="closeModal()">Close</button>
+</div>
+<div *ngIf="!appError.popUpCloseable">
+  <button (click)="navigate(appError.navigation)">Home</button>
+</div>

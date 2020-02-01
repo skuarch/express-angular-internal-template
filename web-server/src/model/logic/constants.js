@@ -1,0 +1,9 @@
+module.exports.UNAUTHENTICATED = 401;
+module.exports.HTTP_OK = 200;
+module.exports.HTTP_CONFLICT = 409;
+module.exports.HTTP_INTERNAL_SERVER_ERROR = 500;
+module.exports.JSON_CONTENT_TYPE = { 'Content-Type': 'application/json' };
+module.exports.HTTP_METHOD_POST = 'POST';
+module.exports.HTTP_FOUND = 302;
+module.exports.HTTP_BAD_REQUEST = 400;
+module.exports.HTTP_NOT_FOUND = 404;
